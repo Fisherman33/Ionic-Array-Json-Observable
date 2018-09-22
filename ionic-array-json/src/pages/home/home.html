@@ -1,0 +1,11 @@
+<ion-content padding>
+    <ion-grid *ngFor="let f of dataF">
+        <div *ngFor="let h of objectData(f)">
+          <ion-row *ngFor="let k of f[h]">        
+            <ion-col *ngFor="let p of objectData(k)">
+           <p> {{k[p]}}</p> 
+            </ion-col>
+          </ion-row>
+        </div>
+      </ion-grid>
+  </ion-content>
